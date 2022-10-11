@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication15.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+            min-height:100vh;
+        }
+        footer{
+            position:sticky;
+            top:100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">  
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Pak Wheels</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <asp:LinkButton ID="LinkButton1"  runat="server"  class="nav-item nav-link " OnClick="LinkButton1_Click">Home</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2"  runat="server"  class="nav-item nav-link " OnClick="LinkButton2_Click">View Ads</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton3"  runat="server"  class="nav-item nav-link " OnClick="LinkButton3_Click">Post Ad</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton5"  runat="server"  class="nav-item nav-link " OnClick="LinkButton5_Click">Login</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton6"  runat="server"  class="nav-item nav-link " OnClick="LinkButton6_Click">Signup</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton7"  runat="server"  class="nav-item nav-link "> username</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4"  runat="server" class="nav-item nav-link " OnClick="LinkButton4_Click" >update</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton9"  runat="server" class="nav-item nav-link " OnClick="LinkButton9_Click" >delete</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton8"  runat="server" class="nav-item nav-link " OnClick="LinkButton8_Click">log out</asp:LinkButton>
+      
+    </div>
+  </div>
+</nav>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+           Our company provide public post ads related to cars so that they can get customers for their cars
+          </p>
+        </div>
+        <!-- Grid column -->
+
+       
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">View Ads</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Lahore,Pakistan</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            saad167@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +923002342232</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="WebForm1.aspx">PakWheels</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+        </form>
+
+</body>
+</html>
